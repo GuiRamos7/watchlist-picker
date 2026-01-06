@@ -94,7 +94,7 @@ export default function Home() {
     setError(null);
 
     try {
-      const response = await fetch(`https://watchlist-picker-jebfp9e2s-guiramos7s-projects.vercel.app/api/watchlist?username=${encodeURIComponent(username)}`);
+      const response = await fetch(`${window.location.origin}/api/watchlist?username=${encodeURIComponent(username)}`);
       const data = await response.json();
 
       if (!response.ok) {
@@ -163,7 +163,7 @@ export default function Home() {
                     <GreenText>Shuffled.</GreenText>
                   </Heading>
                   <Text color="gray.400" fontSize="md" maxW="500px">
-                    Import your Letterboxd watchlist and let us pick your next movie night feature. 
+                    Import your Letterboxd watchlist and let us pick your next movie night feature.
                     No more scrolling paralysis.
                   </Text>
                 </Box>
