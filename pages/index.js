@@ -163,7 +163,7 @@ export default function Home() {
                     <GreenText>Shuffled.</GreenText>
                   </Heading>
                   <Text color="gray.400" fontSize="md" maxW="500px">
-                    Import your Letterboxd watchlist and let us pick your next movie night feature.
+                    Import your Letterboxd watchlist and let us pick your next movie night feature. 
                     No more scrolling paralysis.
                   </Text>
                 </Box>
